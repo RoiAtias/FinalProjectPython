@@ -1,0 +1,50 @@
+{
+  "Plants": [
+    {
+     "name": "Narcissus",
+     "species": "Amaryllidaceae",
+      "age": 7,
+      "water_level": 4.3,
+      "water_requirement": 0.5,
+      "light_requirement": 0.3,
+      "height": 60.5
+    },
+    {
+     "name": "Aloe_vera",
+     "species": "Asphodelaceae",
+      "age": 5,
+      "water_level": 5.3,
+      "water_requirement": 0.6,
+      "light_requirement": 0.9,
+      "height": 77.4
+    },
+    {
+     "name": "Alder",
+     "species": "Betulaceae",
+      "age": 5,
+      "water_level": 4.4,
+      "water_requirement": 0.4,
+      "light_requirement": 0.1,
+      "height": 55.3
+    },
+    {
+     "name": "Almond",
+     "species": "Rosaceae",
+      "age": 4,
+      "water_level": 7.1,
+      "water_requirement": 0.7,
+      "light_requirement": 0.3,
+      "height": 66.1
+    },
+    {
+     "name": "Amaranth",
+     "species": "Amaranthaceae",
+      "age": 3,
+      "water_level": 5,
+      "water_requirement": 0.8,
+      "light_requirement": 0.6,
+      "height": 40.7
+    }
+  ]
+}
+

@@ -1,0 +1,523 @@
+17:53:40,358 root DEBUG initializing
+23:03:40,267 root DEBUG initializing
+21:32:04,951 root DEBUG initializing
+21:32:08,322 root DEBUG initializing
+21:32:53,653 root DEBUG initializing
+08:16:04,154 root DEBUG initializing
+08:16:17,998 root ERROR Service: Error get_plants - local variable 'planets' referenced before assignment
+08:18:15,842 root DEBUG initializing
+08:19:10,103 root DEBUG initializing
+08:20:12,613 root DEBUG initializing
+08:20:30,424 root DEBUG initializing
+08:20:44,769 root DEBUG Planet is exist in list
+08:21:01,286 root DEBUG Planet is exist in list
+08:21:01,287 root ERROR GreenhouseController: Error run_simulation - GreenHouseController.water_plants() takes 1 positional argument but 2 were given
+08:21:23,237 root DEBUG initializing
+08:22:25,74 root DEBUG initializing
+08:22:27,900 root DEBUG initializing
+08:22:31,779 root ERROR GreenhouseController: Error run_simulation - 
+08:22:33,961 root DEBUG initializing
+08:23:42,771 root DEBUG initializing
+08:23:42,773 root DEBUG initializing
+08:23:42,773 root DEBUG Planet is exist in list
+08:23:42,773 root DEBUG Planet is exist in list
+08:23:42,773 root ERROR GreenhouseController: Error run_simulation - GreenHouseController.water_plants() takes 1 positional argument but 2 were given
+08:23:46,127 root DEBUG initializing
+08:24:01,897 root DEBUG initializing
+08:24:09,347 root ERROR GreenhouseController: Error run_simulation - 
+08:24:54,323 root DEBUG initializing
+08:26:31,938 root DEBUG initializing
+08:26:46,524 root ERROR Service: Error get_plants - 
+08:26:46,537 root DEBUG initializing
+08:26:46,538 root ERROR GreenhouseController: Error run_simulation - argument of type 'NoneType' is not iterable
+08:27:29,197 root DEBUG initializing
+08:32:09,920 root DEBUG initializing
+08:32:25,495 root ERROR Service: Error get_plants - string indices must be integers
+17:23:44,764 root DEBUG initializing
+17:25:17,993 root DEBUG initializing
+17:26:54,585 root DEBUG initializing
+17:30:13,85 root DEBUG initializing
+17:31:14,453 root ERROR Service: Error get_plants - 
+17:31:14,466 root DEBUG initializing
+17:31:14,466 root ERROR GreenhouseController: Error run_simulation - argument of type 'NoneType' is not iterable
+17:31:16,555 root DEBUG initializing
+17:32:03,296 root DEBUG initializing
+17:32:12,978 root DEBUG Planet is exist in list
+17:32:12,979 root DEBUG Planet is exist in list
+17:32:12,979 root ERROR GreenhouseController: Error run_simulation - GreenHouseController.water_plants() takes 1 positional argument but 2 were given
+17:32:35,676 root DEBUG initializing
+17:32:35,679 root DEBUG initializing
+17:32:35,680 root DEBUG Planet is exist in list
+17:32:35,681 root DEBUG Planet is exist in list
+17:33:03,142 root DEBUG initializing
+17:33:03,145 root DEBUG initializing
+17:33:03,146 root DEBUG Planet is exist in list
+17:33:03,146 root DEBUG Planet is exist in list
+17:39:41,451 root DEBUG initializing
+17:39:50,408 root DEBUG initializing
+17:39:58,29 root DEBUG Planet is exist in list
+17:39:58,30 root DEBUG Planet is exist in list
+17:40:09,529 root ERROR GreenhouseController: Error run_simulation - cannot unpack non-iterable int object
+17:43:27,523 root DEBUG initializing
+17:43:40,983 root DEBUG initializing
+17:43:40,986 root DEBUG initializing
+17:43:43,507 root DEBUG Planet is exist in list
+17:43:43,508 root DEBUG Planet is exist in list
+18:24:21,384 root DEBUG initializing
+18:24:21,387 root DEBUG initializing
+18:24:26,40 root DEBUG Planet is exist in list
+18:24:26,40 root DEBUG Planet is exist in list
+18:24:48,622 root DEBUG initializing
+18:24:48,625 root DEBUG initializing
+18:24:54,989 root DEBUG Planet is exist in list
+18:24:54,989 root DEBUG Planet is exist in list
+18:27:22,502 root DEBUG initializing
+18:27:22,505 root DEBUG initializing
+18:27:22,506 root DEBUG Planet is exist in list
+18:27:22,506 root DEBUG Planet is exist in list
+18:28:47,139 root DEBUG initializing
+18:28:47,141 root DEBUG initializing
+18:28:47,142 root DEBUG Planet is exist in list
+18:28:47,142 root DEBUG Planet is exist in list
+18:28:50,745 root DEBUG initializing
+18:28:50,747 root DEBUG initializing
+18:28:50,748 root DEBUG Planet is exist in list
+18:28:50,748 root DEBUG Planet is exist in list
+18:31:31,685 root DEBUG initializing
+18:31:31,689 root DEBUG initializing
+18:31:31,689 root DEBUG Planet is exist in list
+18:31:31,689 root DEBUG Planet is exist in list
+18:31:34,980 root ERROR GreenhouseController: Error run_simulation - 
+18:31:35,452 root DEBUG initializing
+18:31:35,455 root DEBUG initializing
+18:31:35,455 root DEBUG Planet is exist in list
+18:31:35,455 root DEBUG Planet is exist in list
+18:31:54,479 root DEBUG initializing
+18:31:54,481 root DEBUG initializing
+18:31:54,482 root DEBUG Planet is exist in list
+18:31:54,482 root DEBUG Planet is exist in list
+18:34:17,945 root DEBUG initializing
+18:34:17,947 root DEBUG initializing
+18:34:17,947 root DEBUG Planet is exist in list
+18:34:17,947 root DEBUG Planet is exist in list
+18:36:44,694 root DEBUG initializing
+18:36:44,697 root DEBUG initializing
+18:36:44,697 root DEBUG Planet is exist in list
+18:36:44,697 root DEBUG Planet is exist in list
+18:40:24,493 root DEBUG initializing
+18:40:24,495 root DEBUG initializing
+18:40:24,495 root DEBUG Planet is exist in list
+18:40:24,495 root DEBUG Planet is exist in list
+18:47:01,787 root DEBUG initializing
+18:47:01,790 root DEBUG initializing
+18:47:33,612 root ERROR GreenhouseController: Error run_simulation - 
+18:48:43,136 root DEBUG initializing
+18:48:43,139 root DEBUG initializing
+18:49:25,335 root ERROR GreenhouseController: Error run_simulation - 
+18:50:02,772 root DEBUG initializing
+18:50:02,775 root DEBUG initializing
+18:50:02,776 root DEBUG Planet is exist in list
+18:50:02,776 root DEBUG Planet is exist in list
+18:50:38,403 root DEBUG initializing
+18:50:38,405 root DEBUG initializing
+18:50:38,405 root DEBUG Planet is not exist in list
+18:50:38,406 root DEBUG Planet is not exist in list
+18:52:37,820 root DEBUG initializing
+18:52:37,823 root DEBUG initializing
+18:53:07,686 root DEBUG initializing
+18:53:07,691 root DEBUG initializing
+18:53:46,827 root DEBUG initializing
+18:53:46,830 root DEBUG initializing
+18:53:59,664 root DEBUG initializing
+18:53:59,667 root DEBUG initializing
+18:54:31,517 root DEBUG initializing
+18:54:31,520 root DEBUG initializing
+18:54:41,196 root DEBUG initializing
+18:54:41,201 root DEBUG initializing
+18:54:58,989 root DEBUG initializing
+18:54:58,992 root DEBUG initializing
+18:55:12,827 root DEBUG initializing
+18:55:12,830 root DEBUG initializing
+18:56:20,920 root DEBUG initializing
+18:56:20,923 root DEBUG initializing
+18:56:38,799 root DEBUG initializing
+18:56:38,802 root DEBUG initializing
+07:38:55,778 root DEBUG initializing
+07:38:55,795 root DEBUG initializing
+07:41:06,716 root ERROR GreenhouseController: Error run_simulation - 
+07:41:12,430 root DEBUG initializing
+07:41:12,433 root DEBUG initializing
+07:44:35,94 root DEBUG initializing
+07:44:35,97 root DEBUG initializing
+07:44:35,98 root ERROR GreenhouseController: Error run_simulation - CLEAR_SKY
+07:44:42,605 root DEBUG initializing
+07:44:42,608 root DEBUG initializing
+07:44:42,608 root ERROR GreenhouseController: Error run_simulation - CLEAR_SKY
+07:45:25,86 root DEBUG initializing
+07:45:25,90 root DEBUG initializing
+07:45:27,355 root ERROR GreenhouseController: Error run_simulation - 'Clear_Sky'
+07:45:47,807 root DEBUG initializing
+07:45:47,810 root DEBUG initializing
+07:47:16,544 root ERROR GreenhouseController: Error run_simulation - 
+07:47:22,640 root DEBUG initializing
+07:47:22,643 root DEBUG initializing
+07:48:25,896 root ERROR GreenhouseController: Error run_simulation - 
+07:50:12,4 root DEBUG initializing
+07:50:12,8 root DEBUG initializing
+07:50:12,9 root ERROR GreenhouseController: Error run_simulation - unsupported operand type(s) for +=: 'float' and 'tuple'
+07:50:15,977 root DEBUG initializing
+07:50:15,980 root DEBUG initializing
+08:03:15,580 root ERROR GreenhouseController: Error run_simulation - 
+08:03:17,977 root DEBUG initializing
+08:03:17,979 root DEBUG initializing
+08:03:20,775 root ERROR GreenhouseController: Error run_simulation - 'Water'
+08:03:49,273 root DEBUG initializing
+08:03:49,276 root DEBUG initializing
+08:03:58,671 root ERROR GreenhouseController: Error run_simulation - 'intensity'
+08:04:40,457 root DEBUG initializing
+08:04:40,460 root DEBUG initializing
+08:38:58,811 root DEBUG initializing
+08:40:27,258 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Snowy'
+08:40:27,259 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Snowy'
+08:40:27,259 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Snowy'
+08:40:27,260 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Snowy'
+08:40:27,260 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Partly_Cloud'
+08:40:27,260 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Stormy'
+08:40:27,260 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Snowy'
+08:40:57,21 root DEBUG initializing
+08:41:12,660 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Stormy'
+08:41:12,661 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Partly_Cloud'
+08:41:12,661 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Partly_Cloud'
+08:41:12,662 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Snowy'
+08:41:12,662 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Stormy'
+08:41:12,662 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Stormy'
+08:42:07,521 root DEBUG initializing
+08:42:19,237 root DEBUG initializing
+08:42:23,635 root DEBUG initializing
+08:42:52,500 root DEBUG initializing
+08:42:58,556 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Snowy'
+08:42:58,556 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Snowy'
+08:42:58,557 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Snowy'
+08:42:58,557 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'int' object has no attribute 'name'
+08:42:58,557 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Partly_Cloud'
+08:42:58,557 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'int' object has no attribute 'name'
+08:42:58,557 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'int' object has no attribute 'name'
+08:44:41,338 root DEBUG initializing
+08:46:40,691 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Stormy'
+08:46:42,480 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Stormy'
+08:46:49,345 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Stormy'
+08:46:49,346 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Stormy'
+08:47:30,929 root DEBUG initializing
+08:47:38,370 root DEBUG initializing
+08:47:41,189 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Partly_Cloud'
+08:47:41,190 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Partly_Cloud'
+08:47:41,190 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Partly_Cloud'
+08:47:41,191 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Partly_Cloud'
+08:47:41,191 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Partly_Cloud'
+08:47:41,192 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - 'Partly_Cloud'
+08:48:09,394 root DEBUG initializing
+21:26:51,921 root DEBUG initializing
+21:27:04,280 root DEBUG initializing
+21:28:58,712 root DEBUG initializing
+21:36:05,669 root DEBUG initializing
+21:36:33,280 root DEBUG initializing
+21:36:57,40 root DEBUG initializing
+21:37:12,695 root DEBUG initializing
+21:37:34,379 root DEBUG initializing
+21:38:36,43 root DEBUG initializing
+21:38:57,571 root DEBUG initializing
+21:39:10,744 root DEBUG initializing
+21:40:17,135 root DEBUG initializing
+21:40:33,820 root DEBUG initializing
+21:40:50,725 root DEBUG initializing
+21:41:22,642 root DEBUG initializing
+21:42:43,316 root DEBUG initializing
+21:43:22,233 root DEBUG initializing
+22:05:09,386 root DEBUG initializing
+22:06:09,50 root DEBUG initializing
+22:08:10,969 root DEBUG initializing
+22:08:25,26 root DEBUG initializing
+22:08:26,561 root DEBUG initializing
+22:09:46,839 root DEBUG initializing
+07:50:16,94 root DEBUG initializing
+08:50:05,421 root DEBUG initializing
+08:52:02,308 root DEBUG initializing
+09:45:25,189 root DEBUG initializing
+18:44:43,891 root DEBUG initializing
+18:45:11,658 root DEBUG initializing
+18:45:11,659 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - GreenHouseController.plant_grow_printer() takes 3 positional arguments but 4 were given
+18:45:11,659 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - GreenHouseController.plant_grow_printer() takes 3 positional arguments but 4 were given
+18:45:11,659 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - GreenHouseController.plant_grow_printer() takes 3 positional arguments but 4 were given
+18:45:11,659 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - GreenHouseController.plant_grow_printer() takes 3 positional arguments but 4 were given
+18:45:11,660 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - GreenHouseController.plant_grow_printer() takes 3 positional arguments but 4 were given
+18:45:11,660 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - GreenHouseController.plant_grow_printer() takes 3 positional arguments but 4 were given
+18:45:11,660 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - GreenHouseController.plant_grow_printer() takes 3 positional arguments but 4 were given
+18:45:11,660 root ERROR GreenhouseController: Error grow_planet_by_day_in_week - GreenHouseController.plant_grow_printer() takes 3 positional arguments but 4 were given
+19:44:17,233 root DEBUG initializing
+08:55:28,996 root DEBUG initializing
+08:59:15,816 root DEBUG initializing
+21:45:14,257 root DEBUG initializing
+21:50:42,540 root ERROR GreenhouseController: Error run_simulation - 
+08:04:58,283 root DEBUG initializing
+08:05:19,536 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,690 root DEBUG initializing
+08:06:02,691 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,691 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,691 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,691 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,692 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,692 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,692 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,692 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,692 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,692 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,694 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,694 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,694 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,695 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,695 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,695 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,695 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,695 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,696 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,696 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,696 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,696 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,696 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,697 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,697 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,697 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,697 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,698 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,698 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,698 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,698 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,698 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,699 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,699 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,699 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,699 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,699 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,699 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,700 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,700 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,700 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,700 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,700 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,701 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,701 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,701 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,701 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,701 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,702 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:02,702 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:06:07,56 root DEBUG initializing
+08:08:22,892 root ERROR GreenhouseController: Error run_simulation - 
+08:08:22,894 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,894 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,895 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,895 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,895 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,896 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,896 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,896 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,897 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,897 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,898 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,898 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,898 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,898 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,899 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,899 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,899 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,899 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,900 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,900 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,900 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,901 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,901 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,901 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,902 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,902 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,902 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,902 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,903 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,903 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,903 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,903 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,904 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,904 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,904 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,904 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,905 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,905 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,905 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,905 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,906 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,906 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,906 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,907 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,907 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,907 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,907 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,908 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:22,908 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:08:28,997 root DEBUG initializing
+08:11:14,387 root ERROR GreenhouseController: Error run_simulation - 
+08:11:14,387 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,388 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,388 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,388 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,388 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,389 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,389 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,389 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,389 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,390 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,390 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,390 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,390 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,390 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,391 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,391 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,391 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,391 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,392 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,392 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,392 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,392 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,392 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,393 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,393 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,393 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,393 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,394 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,394 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,394 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,394 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,395 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,395 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,395 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,395 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,395 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,396 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,396 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,396 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,396 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,397 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,397 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,397 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,397 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,398 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,398 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,398 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,398 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:11:14,399 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:16:49,111 root DEBUG initializing
+08:17:21,483 root ERROR Plant: Error grow - 
+08:23:15,312 root DEBUG initializing
+08:23:33,250 root DEBUG initializing
+08:24:38,654 root ERROR GreenHouseControllerTester: Error run - 
+08:24:43,337 root DEBUG initializing
+08:25:43,925 root ERROR GreenHouseControllerTester: Error run - 
+08:25:46,698 root DEBUG initializing
+08:27:56,262 root DEBUG initializing
+08:32:48,455 root DEBUG initializing
+08:32:48,456 root ERROR GreenhouseController: Error run_simulation - 'int' object is not iterable
+08:33:12,290 root DEBUG initializing
+08:33:12,291 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:34:26,558 root DEBUG initializing
+08:34:37,939 root ERROR GreenhouseController: Error run_simulation - 
+08:34:44,934 root DEBUG initializing
+08:37:11,252 root ERROR GreenhouseController: Error run_simulation - 
+08:37:21,513 root DEBUG initializing
+08:38:11,658 root DEBUG initializing
+08:38:14,488 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:38:52,254 root DEBUG initializing
+08:39:12,389 root ERROR GreenhouseController: Error run_simulation - 
+08:39:45,702 root DEBUG initializing
+08:39:51,36 root ERROR GreenhouseController: Error run_simulation - 
+08:47:02,712 root DEBUG initializing
+08:48:28,303 root ERROR GreenhouseController: Error run_simulation - 
+08:48:34,199 root DEBUG initializing
+08:48:35,819 root ERROR GreenhouseController: Error run_simulation - 'int' object has no attribute 'name'
+08:48:50,485 root DEBUG initializing
+08:50:05,22 root DEBUG initializing
+08:50:17,601 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+08:56:08,144 root DEBUG initializing
+08:56:08,145 root ERROR GreenhouseController: Error run_simulation - 'GreenHouseController' object has no attribute 'irrigationSystem'
+08:56:27,129 root DEBUG initializing
+08:56:27,131 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+09:03:53,544 root DEBUG initializing
+09:03:53,546 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+09:05:38,779 root DEBUG initializing
+09:06:39,304 root DEBUG initializing
+09:07:19,417 root DEBUG initializing
+09:08:03,605 root DEBUG initializing
+09:08:18,830 root DEBUG initializing
+09:08:25,627 root DEBUG initializing
+09:08:34,128 root DEBUG initializing
+09:08:41,200 root DEBUG initializing
+09:11:46,42 root DEBUG initializing
+09:11:46,48 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+09:13:04,500 root DEBUG initializing
+09:21:38,185 root DEBUG initializing
+09:23:13,919 root DEBUG initializing
+09:27:14,39 root DEBUG initializing
+09:39:22,110 root DEBUG initializing
+09:39:41,962 root DEBUG initializing
+09:39:41,965 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+09:39:58,96 root DEBUG initializing
+13:02:05,277 root DEBUG initializing
+13:02:16,603 root DEBUG initializing
+14:28:48,31 root DEBUG initializing
+14:34:54,611 root DEBUG initializing
+14:52:58,805 root DEBUG initializing
+14:55:47,874 root DEBUG initializing
+14:56:00,498 root DEBUG initializing
+14:56:00,507 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+14:57:26,428 root DEBUG initializing
+14:57:26,435 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+15:04:12,310 root DEBUG initializing
+15:04:21,947 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+15:05:32,462 root DEBUG initializing
+15:05:58,404 root DEBUG initializing
+15:06:15,698 root DEBUG initializing
+15:06:21,438 root DEBUG initializing
+15:06:21,444 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+15:07:39,171 root DEBUG initializing
+15:15:07,394 root DEBUG initializing
+15:15:45,504 root DEBUG initializing
+15:21:59,310 root DEBUG initializing
+15:22:22,350 root DEBUG initializing
+15:30:12,121 root DEBUG initializing
+15:30:31,773 root ERROR GreenhouseController: Error run_simulation - 
+15:30:50,852 root DEBUG initializing
+15:31:02,15 root DEBUG initializing
+15:32:14,720 root DEBUG initializing
+16:25:07,501 root DEBUG initializing
+16:25:07,504 root DEBUG initializing
+16:30:17,269 root DEBUG initializing
+16:30:17,277 root DEBUG initializing
+19:13:40,474 root DEBUG initializing
+19:14:32,547 root DEBUG initializing
+19:14:44,285 root DEBUG initializing
+19:15:14,364 root DEBUG initializing
+19:15:18,59 root DEBUG initializing
+19:17:16,468 root DEBUG initializing
+19:17:19,476 root DEBUG initializing
+19:18:56,354 root DEBUG initializing
+19:19:01,557 root DEBUG initializing
+19:22:50,481 root DEBUG initializing
+19:24:06,730 root DEBUG initializing
+19:31:20,21 root DEBUG initializing
+19:31:35,117 root DEBUG initializing
+19:31:40,236 root DEBUG initializing
+19:31:47,852 root DEBUG initializing
+19:32:19,861 root DEBUG initializing
+19:32:38,659 root DEBUG initializing
+19:32:58,934 root DEBUG initializing
+19:33:07,625 root DEBUG initializing
+19:33:15,987 root DEBUG initializing
+19:34:33,453 root DEBUG initializing
+19:34:44,493 root DEBUG initializing
