@@ -27,7 +27,7 @@ python main.py
    
 <p align="center">
 <img src="Src/Assets/Images/smart_irrigation.jpeg">
-</p>
+</p> 
 
 
 
