@@ -57,8 +57,8 @@ class Main:
 
     def run_main_menu(self, selected_choice: int):
         if selected_choice == Menu.Run.value:
-            self.green_house_controller.irrigation_system.add_water(310)
-            self.green_house_controller.run_simulation(50)
+            self.green_house_controller.irrigation_system.add_water(self.config.testerConfig["water_level_irrigation_system"])
+            self.green_house_controller.run_simulation(self.config.greenHouseConfig["MaxDays"])
         elif selected_choice == Menu.Tester.value:
             selected_seb_menu_tester = self.sub_menu_tester()
             self.run_sub_menu(selected_choice=selected_seb_menu_tester)
