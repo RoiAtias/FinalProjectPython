@@ -10,12 +10,12 @@ class PlantTester(UnitTestBase):
 
     def run(self):
         """
-        The function receives the desired number of days for testing.
+        This function receives the desired number of days for testing.
         and calculates the growth of the plant according to the entered parameters.
         """
         try:
             print("----- Plant Tester -----")
-            for day in range(self.max_days + 1):
+            for day in range(self.number_days_system_run + 1):
                 intensity, water = self.conf.water_and_light_exposure_by_weather()
                 for plant in self.plants:
                     plant.water(amount=water)

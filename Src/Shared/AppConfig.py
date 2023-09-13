@@ -14,7 +14,7 @@ class AppConfig:
 
     def get_app_settings(self):
         """
-           Reading the appSettings file.
+           This function reading the appSettings file.
         """
         try:
             ret = None
@@ -31,7 +31,7 @@ class AppConfig:
 
     def init_logger(self):
         """
-            Initialization of the project's logger.
+           This function initialization of the project's logger.
         """
         try:
             basePath = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

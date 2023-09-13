@@ -8,9 +8,9 @@ class UnitTestBase:
         self.plants = []
         self.conf = AppConfig()
         self.irrigation_system = None
-        self.max_days = self.conf.greenHouseConfig["MaxDays"]
+        self.number_days_system_run = self.conf.greenHouseConfig["NumberDaysSystemRun"]
         self.plants = self.fileUtils.get_plants()
-        self.water_level_irrigation_system = self.conf.testerConfig["water_level_irrigation_system"]
+        self.water_level_irrigation_system = self.conf.testerConfig["WaterLevelIrrigationSystem"]
 
     def run(self):
         pass

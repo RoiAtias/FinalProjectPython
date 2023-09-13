@@ -10,7 +10,7 @@ class FileUtils:
 
     def get_plants(self) -> list[Plant]:
         """
-          Returns a list of the plants after creating each one to an object of type plant.
+          This function returns a list of the plants after creating each one to an object of type plant.
           :return: receive list of plants
           :rtype: list[Plant]
         """
@@ -32,7 +32,7 @@ class FileUtils:
 
     def get_read_me_file(self) -> str:
         """
-        The function reads the readme file.
+        This function reads the readme file.
         :return: Returns the text that exists in the file
         :rtype: str
         """

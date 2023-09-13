@@ -9,14 +9,14 @@ class IrrigationSystemTester(UnitTestBase):
 
     def run(self):
         """
-            The function activates the irrigation system according to the number of days set for it.
+            This function activates the irrigation system according to the number of days set for it.
             and checks in each iteration whether there is enough water in the irrigation system and if not, it stops.
         """
         try:
             print("----- Irrigation System Tester -----")
             self.irrigation_system = IrrigationSystem(water_level=self.water_level_irrigation_system)
             water_counter = self.irrigation_system.water_level
-            for day in range(self.max_days + 1):
+            for day in range(self.number_days_system_run + 1):
                 intensity, water = self.conf.water_and_light_exposure_by_weather()
                 if self.irrigation_system.check_water_level_in_irrigation_system(self.plants):
                     self.irrigation_system.irrigate_plants(self.plants)

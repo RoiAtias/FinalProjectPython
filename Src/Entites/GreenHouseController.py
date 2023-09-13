@@ -4,7 +4,6 @@ from Src.Entites.Plant import Plant
 from Src.Entites.IrrigationSystem import IrrigationSystem
 from Src.Shared.FileUtils import FileUtils
 from Src.Shared.AppConfig import AppConfig
-from Src.Models.Enums import Weather
 
 
 class GreenHouseController:
@@ -68,13 +67,13 @@ class GreenHouseController:
 
         :param plant: The plant object.
         :type plant: Plant
-        :param day: The day number in the run is used for printing.
+        :param day: day number in the run is used for printing.
         :type day: int
-        :param water: The amount of water for watering the plant
+        :param water: amount of water for watering the plant
         :type water: float
-        :param intensity: The amount of light
+        :param intensity: amount of light
         :type intensity: float
-        :param water_counter: The amount of water in the irrigation system
+        :param water_counter: amount of water in the irrigation system
         :type water_counter: float
         """
         try:
