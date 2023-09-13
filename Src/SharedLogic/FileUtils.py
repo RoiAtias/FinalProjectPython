@@ -8,9 +8,14 @@ class FileUtils:
     def __init__(self):
         pass
 
-    def get_plants(self):
+    def get_plants(self) -> list[Plant]:
+        """
+          Returns a list of the plants after creating each one to an object of type plant.
+          :return: receive list of plants
+          :rtype: list[Plant]
+        """
         try:
-            plants = []
+            plants = [Plant]
             base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
             plants_path = os.path.join(base_path, "Assets/Data/plants.json")
             if os.path.isfile(plants_path):
@@ -25,7 +30,12 @@ class FileUtils:
         except Exception as err:
             logging.error(f"FileUtils: Error get_plants - {err}")
 
-    def get_read_me_file(self):
+    def get_read_me_file(self) -> str:
+        """
+        The function reads the readme file.
+        :return: Returns the text that exists in the file
+        :rtype: str
+        """
         try:
             with open("README.md", "r", encoding="utf-8") as readme_file:
                 readme_contents = readme_file.read()

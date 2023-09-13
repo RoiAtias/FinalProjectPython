@@ -8,8 +8,10 @@ class GreenHouseControllerTester(UnitTestBase):
         super().__init__()
         self.green_house_controller = GreenHouseController()
 
-
     def run(self):
+        """
+        The function performs a run of run_simulation after adding the water in the irrigation system.
+        """
         try:
             print("----- Green House Controller Tester -----")
             self.green_house_controller.irrigation_system.add_water(self.water_level_irrigation_system)
@@ -18,7 +20,7 @@ class GreenHouseControllerTester(UnitTestBase):
         except BaseException as err:
             logging.error(f"GreenHouseControllerTester: Error run - {err}")
 
-
+# If you want to run the tester independently
 # if __name__ == '__main__':
 #     try:
 #         greenHouseControllerTester = GreenHouseControllerTester()

@@ -15,15 +15,35 @@ class GreenHouseController:
         self.conf = AppConfig()
 
     def add_plant(self, plant: Plant):
-        self.plants.append(plant)
+        """
+        This function takes a plant and adds it to the existing array of plants.
+
+        :param plant: A plant object
+        :type plant: Plant
+        """
+        try:
+           self.plants.append(plant)
+        except Exception as e:
+           print(f"GreenhouseController: Error Add_plant adding element: {e}")
 
     def water_plants(self):
+        """
+          This function calls the irrigation system to water the plants according to the amount of
+          water required for each plant.
+        """
         self.irrigation_system.irrigate_plants(self.plants)
 
-    def run_simulation(self, days):
+    def run_simulation(self, days: int):
+        """
+        This function randomly receives the amount of light and the amount of water and, depending on the number of
+        days,activates the irrigation system. and goes over a plant separately and subtracts the required amount.
+
+        :param days: The desired number of days to lift the simulation
+        :type days: int
+        """
         try:
             print("----- GreenHouseController - Run simulation -----")
-            intensity, water = self.water_and_light_exposure_by_weather()
+            intensity, water = self.conf.water_and_light_exposure_by_weather()
             water_counter = self.irrigation_system.water_level
 
             for day in range(days + 1):
@@ -40,6 +60,21 @@ class GreenHouseController:
             logging.error(f"GreenhouseController: Error run_simulation - {err}")
 
     def execute_process(self, plant: Plant, day: int, water: float, intensity: float, water_counter: float):
+        """
+        This function The function receives a plant and performs on it the actions of introducing an amount of
+        water and receiving an amount of light and activates the function of growth that exists in the plant.
+
+        :param plant: The plant object.
+        :type plant: Plant
+        :param day: The day number in the run is used for printing.
+        :type day: int
+        :param water: The amount of water for watering the plant
+        :type water: float
+        :param intensity: The amount of light
+        :type intensity: float
+        :param water_counter: The amount of water in the irrigation system
+        :type water_counter: float
+        """
         try:
             plant.water(water)
             plant.provide_light(intensity)
@@ -49,9 +84,3 @@ class GreenHouseController:
         except BaseException as err:
             logging.error(f"GreenhouseController: Error execute_process - {err}")
 
-    def water_and_light_exposure_by_weather(self):
-        weather = random.choice(list(Weather))
-        light_exposure_weather = self.conf.greenHouseControllerConfig["lightExposure"][weather.name]
-        water = light_exposure_weather["Water"]
-        intensity = light_exposure_weather["Intensity"]
-        return intensity, water
