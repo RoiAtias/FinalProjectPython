@@ -1,4 +1,3 @@
-from Src.Entites.FileUtils import FileUtils
 from Src.Entites.GreenHouseController import GreenHouseController
 import logging
 from Src.UnitTests.UnitTestBase import UnitTestBase
@@ -9,10 +8,11 @@ class GreenHouseControllerTester(UnitTestBase):
         super().__init__()
         self.green_house_controller = GreenHouseController()
 
+
     def run(self):
         try:
             print("----- Green House Controller Tester -----")
-            self.green_house_controller.irrigation_system.add_water(310)
+            self.green_house_controller.irrigation_system.add_water(self.water_level_irrigation_system)
             self.green_house_controller.run_simulation(self.max_days)
 
         except BaseException as err:

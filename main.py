@@ -2,10 +2,11 @@ from Src.Entites.GreenHouseController import GreenHouseController
 from Src.Models.Enums import Tester
 from Src.Models.Enums import ReturnMenu
 from Src.Models.Enums import Menu
-from Src.Entites.FileUtils import FileUtils
+from Src.SharedLogic.FileUtils import FileUtils
 from Src.UnitTests.PlantTester import PlantTester
 from Src.UnitTests.GreenHouseControllerTester import GreenHouseControllerTester
 from Src.UnitTests.IrrigationSystemTester import IrrigationSystemTester
+from Src.SharedLogic.AppConfig import AppConfig
 import sys
 
 
@@ -13,6 +14,9 @@ class Main:
     def __init__(self):
         self.green_house_controller = GreenHouseController()
         self.file_utils = FileUtils()
+        self.config = AppConfig()
+        self.logger = self.config.init_logger()
+
 
     def run(self):
         selected_choice = self.main_menu()
@@ -28,7 +32,7 @@ class Main:
         print("2. Testers")
         print("3. Introductions")
         print("4. Exit")
-        selected_choice = input("Please select your choice: ")
+        selected_choice = input("choice: ")
         return int(selected_choice)
 
     def sub_menu_tester(self):
@@ -39,7 +43,7 @@ class Main:
         print("2. Irrigation System")
         print("3. Green House Controller")
         print("4. Back Main Menu")
-        selected_choice = input("Please select your choice: ")
+        selected_choice = input("choice: ")
         return int(selected_choice)
 
     def return_main_menu(self):
@@ -47,7 +51,7 @@ class Main:
         print("Please select the choice from the following options : ")
         print("1. Main Menu")
         print("2. Exit")
-        selected_choice = input("Please select your choice: ")
+        selected_choice = input("choice: ")
         return int(selected_choice)
 
     def run_main_menu(self, selected_choice: int):
@@ -58,7 +62,7 @@ class Main:
             selected_seb_menu_tester = self.sub_menu_tester()
             self.run_sub_menu(selected_choice=selected_seb_menu_tester)
         elif selected_choice == Menu.Read_Me.value:
-            self.file_utils.get_read_me_file()
+            print(self.file_utils.get_read_me_file())
         elif selected_choice == Menu.Exit.value:
             sys.exit()
         else:

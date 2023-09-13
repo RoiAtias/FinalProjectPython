@@ -521,3 +521,31 @@
 19:33:15,987 root DEBUG initializing
 19:34:33,453 root DEBUG initializing
 19:34:44,493 root DEBUG initializing
+07:40:51,694 root DEBUG initializing
+07:42:11,291 root DEBUG initializing
+07:52:33,379 root DEBUG initializing
+07:52:43,667 root DEBUG initializing
+07:52:53,959 root DEBUG initializing
+07:53:09,710 root DEBUG initializing
+07:53:46,220 root DEBUG initializing
+07:54:18,14 root DEBUG initializing
+07:55:00,280 root DEBUG initializing
+08:04:45,766 root DEBUG initializing
+08:04:57,377 root DEBUG initializing
+08:05:07,896 root DEBUG initializing
+08:05:07,899 root DEBUG initializing
+08:05:07,899 root ERROR GreenHouseControllerTester: Error run - 'Config' object has no attribute 'water_level_irrigation_system'
+08:06:39,51 root DEBUG initializing
+08:07:17,628 root DEBUG initializing
+08:08:02,850 root ERROR GreenhouseController: Error run_simulation - 'Config' object has no attribute 'water_level_irrigation_system'
+08:08:39,66 root DEBUG initializing
+08:08:44,430 root DEBUG initializing
+08:48:23,200 root DEBUG initializing
+08:48:38,692 root ERROR PlantTester: Error run - 'dict' object has no attribute 'greenHouseControllerConfig'
+08:49:17,974 root DEBUG initializing
+08:50:23,5 root ERROR PlantTester: Error run - 
+08:50:24,683 root DEBUG initializing
+08:50:38,587 root ERROR GreenHouseControllerTester: Error run - 'AppConfig' object has no attribute 'water_level_irrigation_system'
+08:52:35,77 root DEBUG initializing
+08:52:47,412 root ERROR GreenhouseController: Error run_simulation - 'IrrigationSystemTester' object has no attribute 'water_level_irrigation_system'
+08:53:22,356 root DEBUG initializing
