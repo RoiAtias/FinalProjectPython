@@ -25,6 +25,7 @@ class PlantTester(UnitTestBase):
                           f"Height - {round(plant.height, 5)}")
 
         except BaseException as err:
+            print(f"PlantTester: Error run - {err}")
             logging.error(f"PlantTester: Error run - {err}")
 
 # If you want to run the tester independently

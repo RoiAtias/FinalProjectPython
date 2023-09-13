@@ -1,5 +1,5 @@
-from Src.SharedLogic.AppConfig import AppConfig
-from Src.SharedLogic.FileUtils import FileUtils
+from Src.Shared.AppConfig import AppConfig
+from Src.Shared.FileUtils import FileUtils
 from Src.Models.Enums import Tester
 
 class UnitTestBase:

@@ -2,8 +2,8 @@ import random
 import logging
 from Src.Entites.Plant import Plant
 from Src.Entites.IrrigationSystem import IrrigationSystem
-from Src.SharedLogic.FileUtils import FileUtils
-from Src.SharedLogic.AppConfig import AppConfig
+from Src.Shared.FileUtils import FileUtils
+from Src.Shared.AppConfig import AppConfig
 from Src.Models.Enums import Weather
 
 
@@ -22,9 +22,10 @@ class GreenHouseController:
         :type plant: Plant
         """
         try:
-           self.plants.append(plant)
+            self.plants.append(plant)
         except Exception as e:
-           print(f"GreenhouseController: Error Add_plant adding element: {e}")
+            print(f"GreenhouseController: Error Add_plant adding element: {e}")
+            logging.error(f"GreenhouseController: Error Add_plant adding element: {e}")
 
     def water_plants(self):
         """
@@ -57,6 +58,7 @@ class GreenHouseController:
                     break
 
         except BaseException as err:
+            print(f"GreenhouseController: Error run_simulation - {err}")
             logging.error(f"GreenhouseController: Error run_simulation - {err}")
 
     def execute_process(self, plant: Plant, day: int, water: float, intensity: float, water_counter: float):
@@ -82,5 +84,5 @@ class GreenHouseController:
             print(f"Plant {plant.name} : Day {day}, Height - {round(plant.height, 5)}, "
                   f"Plant Growth - {round(plant_growth, 5)}, Water In Irrigation system - {water_counter}")
         except BaseException as err:
+            print(f"GreenhouseController: Error execute_process - {err}")
             logging.error(f"GreenhouseController: Error execute_process - {err}")
-

@@ -18,6 +18,7 @@ class GreenHouseControllerTester(UnitTestBase):
             self.green_house_controller.run_simulation(self.max_days)
 
         except BaseException as err:
+            print(f"GreenHouseControllerTester: Error run - {err}")
             logging.error(f"GreenHouseControllerTester: Error run - {err}")
 
 # If you want to run the tester independently

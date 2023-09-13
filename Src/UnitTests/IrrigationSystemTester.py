@@ -32,6 +32,7 @@ class IrrigationSystemTester(UnitTestBase):
                     break
 
         except BaseException as err:
+            print(f"IrrigationSystemTester: Error run_simulation - {err}")
             logging.error(f"IrrigationSystemTester: Error run_simulation - {err}")
 
 # If you want to run the tester independently

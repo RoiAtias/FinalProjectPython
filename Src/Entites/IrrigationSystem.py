@@ -18,6 +18,7 @@ class IrrigationSystem:
             self.water_level += amount
         except Exception as e:
             print(f"IrrigationSystem: Error add_water Added amount: {e}")
+            logging.error(f"IrrigationSystem: Error add_water Added amount: {e}")
 
     def irrigate_plants(self, plants: list[Plant]):
         """
@@ -42,6 +43,7 @@ class IrrigationSystem:
                     self.water_level -= plant.water_requirement
 
         except BaseException as err:
+            print(f"IrrigationSystem: Error irrigate_plants - {err}")
             logging.error(f"IrrigationSystem: Error irrigate_plants - {err}")
 
     def check_water_level_in_irrigation_system(self, plants: list[Plant]) -> bool:

@@ -26,6 +26,7 @@ class Plant:
             self.water_level += amount
         except Exception as e:
             print(f"Plant: Error water Added amount: {e}")
+            logging.error(f"Plant: Error water Added amount: {e}")
 
     def provide_light(self, intensity: float):
         """
@@ -38,6 +39,7 @@ class Plant:
             self.light_exposure = intensity
         except Exception as e:
             print(f"Plant: Error provide_light Added intensity: {e}")
+            logging.error(f"Plant: Error provide_light Added intensity: {e}")
 
     def grow(self) -> float:
         """
@@ -62,6 +64,7 @@ class Plant:
             return planet_growth
 
         except BaseException as err:
+            print(f"Plant: Error grow - {err}")
             logging.error(f"Plant: Error grow - {err}")
 
     def get_random_number_by_date(self) -> float:

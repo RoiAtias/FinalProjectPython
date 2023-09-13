@@ -2,12 +2,13 @@ from Src.Entites.GreenHouseController import GreenHouseController
 from Src.Models.Enums import Tester
 from Src.Models.Enums import ReturnMenu
 from Src.Models.Enums import Menu
-from Src.SharedLogic.FileUtils import FileUtils
+from Src.Shared.FileUtils import FileUtils
 from Src.UnitTests.PlantTester import PlantTester
 from Src.UnitTests.GreenHouseControllerTester import GreenHouseControllerTester
 from Src.UnitTests.IrrigationSystemTester import IrrigationSystemTester
-from Src.SharedLogic.AppConfig import AppConfig
+from Src.Shared.AppConfig import AppConfig
 import sys
+import logging
 
 
 class Main:
@@ -100,6 +101,7 @@ if __name__ == '__main__':
         main = Main()
         main.run()
     except Exception as err:
+        logging.error(f"Main: Error main - {err}")
         exit(1)
 
 
