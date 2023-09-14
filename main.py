@@ -18,7 +18,6 @@ class Main:
         self.config = AppConfig()
         self.logger = self.config.init_logger()
 
-
     def run(self):
         selected_choice = self.main_menu()
         self.run_main_menu(selected_choice)
@@ -34,7 +33,10 @@ class Main:
         print("3. Introductions")
         print("4. Exit")
         selected_choice = input("choice: ")
-        return int(selected_choice)
+        if self.check_valid_input_number(selected_choice):
+            return int(selected_choice)
+        else:
+            self.main_menu()
 
     def sub_menu_tester(self):
         print("")
@@ -45,7 +47,10 @@ class Main:
         print("3. Green House Controller")
         print("4. Back Main Menu")
         selected_choice = input("choice: ")
-        return int(selected_choice)
+        if self.check_valid_input_number(selected_choice):
+            return int(selected_choice)
+        else:
+            self.sub_menu_tester()
 
     def return_main_menu(self):
         print("")
@@ -53,12 +58,16 @@ class Main:
         print("1. Main Menu")
         print("2. Exit")
         selected_choice = input("choice: ")
-        return int(selected_choice)
+        if self.check_valid_input_number(selected_choice):
+            return int(selected_choice)
+        else:
+            self.return_main_menu()
+
 
     def run_main_menu(self, selected_choice: int):
         if selected_choice == Menu.Run.value:
             self.green_house_controller.irrigation_system.add_water(
-                                        self.config.testerConfig["WaterLevelIrrigationSystem"])
+                self.config.testerConfig["WaterLevelIrrigationSystem"])
             self.green_house_controller.run_simulation(self.config.greenHouseConfig["NumberDaysSystemRun"])
         elif selected_choice == Menu.Tester.value:
             selected_seb_menu_tester = self.sub_menu_tester()
@@ -96,6 +105,13 @@ class Main:
             print(f"Choice {selected_choice} is incorrect, please choose again")
             self.run()
 
+    def check_valid_input_number(self, selected_choice):
+        is_valid = True
+        if not selected_choice.isdigit():
+            print(f"Choice {selected_choice} is incorrect, please choose again")
+            is_valid = False
+        return is_valid
+
 
 if __name__ == '__main__':
     try:
@@ -104,5 +120,3 @@ if __name__ == '__main__':
     except Exception as err:
         logging.error(f"Main: Error main - {err}")
         exit(1)
-
-

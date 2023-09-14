@@ -28,8 +28,8 @@ class IrrigationSystem:
            After that, for each plant I water and also subtract from the amount of water in the tank the amount of
            water required for each plant
 
-           :param plants: amount of water
-           :type plants: float
+           :param plants: list of plant
+           :type plants: list[Plant]
         """
         try:
             if len(plants) > 0:
@@ -37,6 +37,9 @@ class IrrigationSystem:
 
                 if self.water_level > 0:
                     amount_water_irrigation = self.water_level / len(plants)
+
+                elif self.water_level <= 0:
+                    print(f"IrrigationSystem: Error irrigate_plants : amount of water is less than or equal to 0")
 
                 for plant in plants:
                     plant.water(amount_water_irrigation)
@@ -51,12 +54,11 @@ class IrrigationSystem:
            The function checks whether there is enough water in the irrigation system in relation to the
            amount of water required by all the plants together.
 
-           :param plants: amount of water
-           :type plants: float
+           :param plants: list of Plant
+           :type plants: list[Plant]
            :return: Returns if the amount is sufficient in the water tank in the irrigation system
            :rtype: bool
         """
-
         is_valid = True
         sum_water_requirement = sum(plant.water_requirement for plant in plants)
         if sum_water_requirement > self.water_level:

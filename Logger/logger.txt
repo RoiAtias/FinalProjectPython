@@ -565,3 +565,17 @@
 18:06:08,126 root DEBUG initializing
 18:06:15,737 root ERROR IrrigationSystemTester: Error run_simulation - 'IrrigationSystemTester' object has no attribute 'max_days'
 18:06:38,344 root DEBUG initializing
+18:17:40,754 root DEBUG initializing
+18:17:57,759 root ERROR Main: Error main - invalid literal for int() with base 10: '\\'
+18:21:58,546 root DEBUG initializing
+18:22:00,321 root DEBUG initializing
+18:22:05,9 root ERROR Main: Error main - invalid literal for int() with base 10: 'ffff'
+18:22:18,33 root DEBUG initializing
+18:23:09,594 root DEBUG initializing
+18:23:50,383 root DEBUG initializing
+18:23:51,831 root DEBUG initializing
+20:08:48,770 root DEBUG initializing
+20:13:24,675 root DEBUG initializing
+20:13:26,517 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+20:14:52,748 root DEBUG initializing
+20:14:54,292 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system

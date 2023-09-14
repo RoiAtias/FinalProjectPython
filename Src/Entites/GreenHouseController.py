@@ -45,7 +45,6 @@ class GreenHouseController:
             print("----- GreenHouseController - Run simulation -----")
             intensity, water = self.conf.water_and_light_exposure_by_weather()
             water_counter = self.irrigation_system.water_level
-
             for day in range(days + 1):
                 if self.irrigation_system.check_water_level_in_irrigation_system(self.plants):
                     self.water_plants()
