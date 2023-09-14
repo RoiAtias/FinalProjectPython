@@ -37,8 +37,7 @@ class IrrigationSystem:
 
                 if self.water_level > 0:
                     amount_water_irrigation = self.water_level / len(plants)
-
-                elif self.water_level <= 0:
+                else:
                     print(f"IrrigationSystem: Error irrigate_plants : amount of water is less than or equal to 0")
 
                 for plant in plants:
