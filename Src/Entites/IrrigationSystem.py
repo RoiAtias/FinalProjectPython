@@ -48,20 +48,3 @@ class IrrigationSystem:
             print(f"IrrigationSystem: Error irrigate_plants - {err}")
             logging.error(f"IrrigationSystem: Error irrigate_plants - {err}")
 
-    def check_water_level_in_irrigation_system(self, plants: list[Plant]) -> bool:
-        """
-           The function checks whether there is enough water in the irrigation system in relation to the
-           amount of water required by all the plants together.
-
-           :param plants: list of Plant
-           :type plants: list[Plant]
-           :return: Returns if the amount is sufficient in the water tank in the irrigation system
-           :rtype: bool
-        """
-        is_valid = True
-        sum_water_requirement = sum(plant.water_requirement for plant in plants)
-        if sum_water_requirement > self.water_level:
-            is_valid = False
-            logging.error(f"IrrigationSystem: Error check_water_level_in_irrigation_system - "
-                          f"There is not enough water in the irrigation system")
-        return is_valid

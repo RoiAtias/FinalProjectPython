@@ -46,13 +46,14 @@ class GreenHouseController:
             intensity, water = self.conf.water_and_light_exposure_by_weather()
             water_counter = self.irrigation_system.water_level
             for day in range(days + 1):
-                if self.irrigation_system.check_water_level_in_irrigation_system(self.plants):
+                if sum(plant.water_requirement for plant in self.plants) < self.irrigation_system.water_level:
                     self.water_plants()
                     for plant in self.plants:
                         water_counter -= plant.water_requirement
                         self.execute_process(plant, day, water, intensity, water_counter)
                 else:
                     print("There is not enough water in the irrigation system")
+                    logging.error(f"GreenHouseController: There is not enough water in the irrigation system")
                     break
 
         except BaseException as err:
