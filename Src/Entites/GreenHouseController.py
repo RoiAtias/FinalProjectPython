@@ -21,7 +21,8 @@ class GreenHouseController:
         :type plant: Plant
         """
         try:
-            self.plants.append(plant)
+            if self.plants:
+                self.plants.append(plant)
         except Exception as e:
             print(f"GreenhouseController: Error Add_plant adding element: {e}")
             logging.error(f"GreenhouseController: Error Add_plant adding element: {e}")
@@ -31,7 +32,11 @@ class GreenHouseController:
           This function calls the irrigation system to water the plants according to the amount of
           water required for each plant.
         """
-        self.irrigation_system.irrigate_plants(self.plants)
+        if len(self.plants) > 0:
+            self.irrigation_system.irrigate_plants(self.plants)
+        else:
+            print(
+                f"GreenhouseController: Error water_plants The number of plants in the list is less than or equal to 0")
 
     def run_simulation(self, days: int):
         """
@@ -42,20 +47,27 @@ class GreenHouseController:
         :type days: int
         """
         try:
-            print("----- GreenHouseController - Run simulation -----")
-            intensity, water = self.conf.water_and_light_exposure_by_weather()
-            water_counter = self.irrigation_system.water_level
-            for day in range(days + 1):
-                if sum(plant.water_requirement for plant in self.plants) < self.irrigation_system.water_level:
-                    self.water_plants()
-                    for plant in self.plants:
-                        water_counter -= plant.water_requirement
-                        self.execute_process(plant, day, water, intensity, water_counter)
-                else:
-                    print("There is not enough water in the irrigation system")
-                    logging.error(f"GreenHouseController: There is not enough water in the irrigation system")
-                    break
-
+            if days < 0:
+                print("Error The number of days should be a positive number")
+            water_level_irrigation_system = self.conf.greenHouseControllerConfig["WaterLevelIrrigationSystem"]
+            intensity = self.conf.light_exposure_by_weather()
+            if (intensity > 0 and water_level_irrigation_system > 0) and (intensity > 0 or water_level_irrigation_system
+                                                                          > 0):
+                self.irrigation_system.add_water(water_level_irrigation_system)
+                water_counter = self.irrigation_system.water_level
+                for day in range(days + 1):
+                    if sum(plant.water_requirement for plant in self.plants) < self.irrigation_system.water_level:
+                        self.water_plants()
+                        for plant in self.plants:
+                            water_counter -= plant.water_requirement
+                            self.execute_process(plant, day, self.conf.greenHouseControllerConfig["WaterPlant"],
+                                                 intensity, water_counter)
+                    else:
+                        print("There is not enough water in the irrigation system")
+                        break
+            else:
+                print(f"GreenhouseController: Error run_simulation  Error The amount of light or water is not greater "
+                      f"than 0")
         except BaseException as err:
             print(f"GreenhouseController: Error run_simulation - {err}")
             logging.error(f"GreenhouseController: Error run_simulation - {err}")
@@ -77,10 +89,13 @@ class GreenHouseController:
         :type water_counter: float
         """
         try:
-            plant.water(water)
+            if water > 0:
+                plant.water(water)
+            else:
+                print(f"GreenhouseController: Error execute_process - The amount of water smaller than 0")
             plant.provide_light(intensity)
             plant_growth = plant.grow()
-            print(f"Plant {plant.name} : Day {day}, Height - {round(plant.height, 5)}, "
+            print(f"Plant {plant.name} : Day - {day}, Height - {round(plant.height, 5)}, "
                   f"Plant Growth - {round(plant_growth, 5)}, Water In Irrigation system - {water_counter}")
         except BaseException as err:
             print(f"GreenhouseController: Error execute_process - {err}")

@@ -63,11 +63,9 @@ class Main:
         else:
             self.return_main_menu()
 
-
     def run_main_menu(self, selected_choice: int):
         if selected_choice == Menu.Run.value:
-            self.green_house_controller.irrigation_system.add_water(
-                self.config.testerConfig["WaterLevelIrrigationSystem"])
+            print("----- GreenHouseController - Run simulation -----")
             self.green_house_controller.run_simulation(self.config.greenHouseConfig["NumberDaysSystemRun"])
         elif selected_choice == Menu.Tester.value:
             selected_seb_menu_tester = self.sub_menu_tester()
@@ -82,12 +80,15 @@ class Main:
 
     def run_sub_menu(self, selected_choice: int):
         if selected_choice == Tester.Plant.value:
+            print("----- Plant Tester -----")
             plant = PlantTester()
             plant.run()
         elif selected_choice == Tester.Irrigation_System.value:
+            print("----- Irrigation System Tester -----")
             irrigation_system = IrrigationSystemTester()
             irrigation_system.run()
         elif selected_choice == Tester.Green_House_Controller.value:
+            print("----- Green House Controller Tester -----")
             green_house_controller = GreenHouseControllerTester()
             green_house_controller.run()
         elif selected_choice == Tester.Back_To_Menu.value:

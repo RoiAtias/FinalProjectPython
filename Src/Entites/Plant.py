@@ -22,8 +22,12 @@ class Plant:
           :param amount: amount of water
           :type amount: float
         """
+
         try:
-            self.water_level += amount
+            if amount > 0:
+                self.water_level += amount
+            else:
+                print(f"Error it is not possible to add a negative amount of water to the plant")
         except Exception as e:
             print(f"Plant: Error water Added amount: {e}")
             logging.error(f"Plant: Error water Added amount: {e}")
@@ -35,8 +39,12 @@ class Plant:
           :param intensity: amount of light
           :type intensity: float
         """
+
         try:
-            self.light_exposure = intensity
+            if intensity > 0:
+                self.light_exposure = intensity
+            else:
+                print("Error The amount of light the function can receive must be greater than 0")
         except Exception as e:
             print(f"Plant: Error provide_light Added intensity: {e}")
             logging.error(f"Plant: Error provide_light Added intensity: {e}")
@@ -58,6 +66,11 @@ class Plant:
                 planet_growth = 0
 
             self.height += planet_growth
+
+            # Testing in the state of wilting of the plant, the height cannot be at a negative height
+            if self.height < 0:
+                print(f"The plant is at a height that cannot be lowered below it")
+
             self.age += 1
             self.water_level = 0
 

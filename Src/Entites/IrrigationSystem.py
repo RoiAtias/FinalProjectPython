@@ -15,7 +15,10 @@ class IrrigationSystem:
              :type amount: float
         """
         try:
-            self.water_level += amount
+            if amount > 0:
+                self.water_level += amount
+            else:
+                print("The amount of water that can be put in the tank must be a positive number")
         except Exception as e:
             print(f"IrrigationSystem: Error add_water Added amount: {e}")
             logging.error(f"IrrigationSystem: Error add_water Added amount: {e}")
@@ -47,4 +50,3 @@ class IrrigationSystem:
         except BaseException as err:
             print(f"IrrigationSystem: Error irrigate_plants - {err}")
             logging.error(f"IrrigationSystem: Error irrigate_plants - {err}")
-

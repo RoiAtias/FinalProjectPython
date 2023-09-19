@@ -13,25 +13,26 @@ class IrrigationSystemTester(UnitTestBase):
             and checks in each iteration whether there is enough water in the irrigation system and if not, it stops.
         """
         try:
-            print("----- Irrigation System Tester -----")
-            self.irrigation_system = IrrigationSystem(water_level=self.water_level_irrigation_system)
-            water_counter = self.irrigation_system.water_level
-            for day in range(self.number_days_system_run + 1):
-                intensity, water = self.conf.water_and_light_exposure_by_weather()
-                if sum(plant.water_requirement for plant in self.plants) < self.irrigation_system.water_level:
-                    self.irrigation_system.irrigate_plants(self.plants)
-                    for plant in self.plants:
-                        plant.provide_light(intensity)
-                        planet_growth = plant.grow()
-                        water_counter = water_counter - plant.water_requirement
-                        print(
-                            f"{plant.name} : Day - {day}, Water in Irrigation System  - {round(water_counter, 5)}, "
-                            f"Planet Growth {round(planet_growth, 5)}, "
-                            f"Height - {round(plant.height, 5)}")
-                else:
-                    print("There is not enough water in the irrigation system")
-                    logging.error(f"IrrigationSystemTester: Error - There is not enough water in the irrigation system")
-                    break
+            if self.water_level_irrigation_system > 0 and self.number_days_system_run >= 0:
+                self.irrigation_system = IrrigationSystem(water_level=self.water_level_irrigation_system)
+                water_counter = self.irrigation_system.water_level
+                for day in range(self.number_days_system_run + 1):
+                    intensity = self.conf.light_exposure_by_weather()
+                    if sum(plant.water_requirement for plant in self.plants) < self.irrigation_system.water_level:
+                        self.irrigation_system.irrigate_plants(self.plants)
+                        for plant in self.plants:
+                            plant.provide_light(intensity)
+                            planet_growth = plant.grow()
+                            water_counter = water_counter - plant.water_requirement
+                            print(
+                                f"{plant.name} : Day - {day}, Water in Irrigation System - {round(water_counter, 5)}, "
+                                f"Planet Growth - {round(planet_growth, 5)}, "
+                                f"Height - {round(plant.height, 5)}")
+                    else:
+                        print("There is not enough water in the irrigation system")
+                        logging.error(f"IrrigationSystemTester: Error - There is not enough water in "
+                                      f"the irrigation system")
+                        break
 
         except BaseException as err:
             print(f"IrrigationSystemTester: Error run_simulation - {err}")

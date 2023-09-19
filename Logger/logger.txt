@@ -579,3 +579,194 @@
 20:13:26,517 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
 20:14:52,748 root DEBUG initializing
 20:14:54,292 root ERROR IrrigationSystem: Error check_water_level_in_irrigation_system - There is not enough water in the irrigation system
+07:58:17,408 root DEBUG initializing
+07:58:21,141 root ERROR GreenHouseController: There is not enough water in the irrigation system
+07:58:49,686 root ERROR GreenHouseController: There is not enough water in the irrigation system
+07:58:58,46 root ERROR IrrigationSystemTester: Error - There is not enough water in the irrigation system
+21:00:48,637 root DEBUG initializing
+21:00:50,736 root ERROR GreenHouseController: There is not enough water in the irrigation system
+21:01:34,803 root DEBUG initializing
+21:01:42,187 root ERROR GreenHouseController: There is not enough water in the irrigation system
+21:01:50,714 root ERROR IrrigationSystemTester: Error - There is not enough water in the irrigation system
+21:03:10,611 root DEBUG initializing
+21:39:58,874 root DEBUG initializing
+21:40:02,176 root ERROR GreenHouseController: There is not enough water in the irrigation system
+21:41:16,743 root DEBUG initializing
+21:41:20,88 root ERROR GreenHouseController: There is not enough water in the irrigation system
+21:41:43,595 root DEBUG initializing
+21:42:20,480 root DEBUG initializing
+21:42:29,259 root DEBUG initializing
+21:42:33,601 root DEBUG initializing
+21:46:31,52 root ERROR PlantTester: Error run - 
+21:46:31,81 root ERROR Main: Error main - 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+21:47:00,763 root DEBUG initializing
+21:47:03,432 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,433 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,433 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,433 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,433 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,433 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,433 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,433 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,433 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,434 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,434 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,434 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,434 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,434 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,434 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,434 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,435 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,435 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,435 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,435 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,435 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,435 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,435 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,435 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,435 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,437 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,437 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,437 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,437 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,437 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,437 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,437 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,437 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,437 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,438 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,438 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,438 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,438 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,438 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,438 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,438 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,439 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,439 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,439 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,439 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,439 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,439 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,440 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,440 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,440 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,440 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,440 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,440 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,440 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:47:03,440 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:44,250 root DEBUG initializing
+21:49:46,873 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,873 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,873 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,873 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,873 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,874 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,874 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,874 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,874 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,874 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,874 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,874 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,875 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,875 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,875 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,875 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,875 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,875 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,875 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,875 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,875 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,876 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,876 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,876 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,876 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,876 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,876 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,876 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,877 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,877 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,877 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,877 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,877 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,877 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,877 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,877 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,878 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,878 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,878 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,878 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,878 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,878 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,878 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,878 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,878 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,878 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,879 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,879 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,879 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,879 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,879 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,879 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,879 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,880 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+21:49:46,880 root ERROR Plant: Error water Added amount: '>' not supported between instances of 'str' and 'int'
+19:27:57,77 root DEBUG initializing
+19:27:59,542 root ERROR GreenHouseController: There is not enough water in the irrigation system
+19:33:20,338 root DEBUG initializing
+19:33:26,476 root ERROR GreenHouseController: There is not enough water in the irrigation system
+19:33:58,10 root DEBUG initializing
+19:35:04,752 root ERROR GreenhouseController: Error execute_process - 
+19:35:04,753 root ERROR GreenHouseController: There is not enough water in the irrigation system
+19:35:04,785 root ERROR Main: Error main - 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+19:43:52,109 root DEBUG initializing
+19:43:54,754 root ERROR GreenHouseController: There is not enough water in the irrigation system
+19:44:26,942 root DEBUG initializing
+19:44:28,881 root ERROR GreenHouseController: There is not enough water in the irrigation system
+19:50:34,763 root DEBUG initializing
+19:56:44,743 root DEBUG initializing
+19:56:46,759 root ERROR GreenhouseController: Error run_simulation  Error The amount of lightis not greater than 0
+19:57:11,715 root DEBUG initializing
+19:57:14,183 root ERROR GreenHouseController: There is not enough water in the irrigation system
+19:58:30,901 root DEBUG initializing
+20:16:23,916 root ERROR GreenhouseController: Error run_simulation - 
+20:16:23,938 root ERROR Main: Error main - 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+20:24:22,282 root DEBUG initializing
+20:24:58,73 root ERROR GreenhouseController: Error run_simulation  Error The amount of light or wateris not greater than 0
+21:22:49,942 root DEBUG initializing
+21:22:52,728 root ERROR GreenHouseController: There is not enough water in the irrigation system
+21:23:10,471 root DEBUG initializing
+21:23:12,380 root ERROR GreenhouseController: Error run_simulation  Error The amount of light or water is not greater than 0
+21:23:21,616 root DEBUG initializing
+21:23:23,128 root ERROR GreenHouseController: There is not enough water in the irrigation system
+21:23:31,224 root DEBUG initializing
+21:23:33,408 root ERROR GreenhouseController: Error run_simulation  Error The amount of light or water is not greater than 0
+21:23:57,48 root DEBUG initializing
+21:23:59,344 root ERROR GreenHouseController: There is not enough water in the irrigation system
+21:24:16,688 root DEBUG initializing
+21:24:19,0 root ERROR GreenhouseController: Error run_simulation  Error The amount of light or water is not greater than 0
+21:26:38,380 root DEBUG initializing
+21:26:41,152 root ERROR GreenHouseController: There is not enough water in the irrigation system
+21:26:47,387 root DEBUG initializing
+21:43:11,480 root ERROR GreenhouseController: Error execute_process - 
+21:43:11,481 root ERROR GreenHouseController: There is not enough water in the irrigation system
+21:43:11,556 root ERROR Main: Error main - 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+21:53:18,588 root DEBUG initializing
+21:53:30,412 root ERROR PlantTester: Error run - '>' not supported between instances of 'str' and 'int'
+21:54:51,949 root DEBUG initializing
+21:55:32,395 root DEBUG initializing
+21:56:00,488 root DEBUG initializing
+21:56:26,698 root DEBUG initializing
+21:56:35,733 root DEBUG initializing
+21:56:38,539 root ERROR PlantTester: Error run - '>' not supported between instances of 'str' and 'int'
+21:57:10,624 root DEBUG initializing
+21:57:12,481 root ERROR GreenhouseController: Error run_simulation - invalid literal for int() with base 10: 'F'
+21:58:10,818 root ERROR GreenHouseControllerTester: Error run - '>' not supported between instances of 'str' and 'int'
+21:58:20,130 root ERROR IrrigationSystemTester: Error run_simulation - '>' not supported between instances of 'str' and 'int'
+21:58:57,240 root DEBUG initializing
+21:58:57,874 root DEBUG initializing
+21:58:59,826 root ERROR GreenhouseController: Error run_simulation - '>' not supported between instances of 'str' and 'int'
+21:59:04,506 root ERROR PlantTester: Error run - '>' not supported between instances of 'str' and 'int'
+22:01:08,669 root DEBUG initializing
+22:01:11,905 root ERROR GreenhouseController: Error run_simulation  Error The amount of light or water is not greater than 0
+22:01:29,792 root DEBUG initializing

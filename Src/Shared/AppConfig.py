@@ -50,14 +50,12 @@ class AppConfig:
         except BaseException as err:
             logging.error("Config: Error init_logger - {0}".format(err))
 
-    def water_and_light_exposure_by_weather(self) -> tuple:
+    def light_exposure_by_weather(self) -> float:
         """
             The function randomly receives the weather and turns to appSettings.json.
-            :return: receive the amount of water and light required for the selected random weather
-            :rtype: tuple
+            :return: receive the amount of light required for the selected random weather
+            :rtype: float
         """
         weather = random.choice(list(Weather))
-        light_exposure_weather = self.greenHouseControllerConfig["lightExposure"][weather.name]
-        water = light_exposure_weather["Water"]
-        intensity = light_exposure_weather["Intensity"]
-        return intensity, water
+        light_exposure_weather = self.greenHouseControllerConfig["LightExposure"][weather.name]
+        return light_exposure_weather["Intensity"]
