@@ -35,14 +35,8 @@ class IrrigationSystem:
            :type plants: list[Plant]
         """
         try:
-            if len(plants) > 0:
-                amount_water_irrigation = 0
-
-                if self.water_level > 0:
-                    amount_water_irrigation = self.water_level / len(plants)
-                else:
-                    print(f"IrrigationSystem: Error irrigate_plants : amount of water is less than or equal to 0")
-
+            if plants:
+                amount_water_irrigation = self.water_level / len(plants)
                 for plant in plants:
                     plant.water(amount_water_irrigation)
                     self.water_level -= plant.water_requirement

@@ -770,3 +770,10 @@
 22:01:08,669 root DEBUG initializing
 22:01:11,905 root ERROR GreenhouseController: Error run_simulation  Error The amount of light or water is not greater than 0
 22:01:29,792 root DEBUG initializing
+21:52:02,419 root DEBUG initializing
+07:48:12,116 root DEBUG initializing
+07:48:42,266 root DEBUG initializing
+08:14:06,112 root DEBUG initializing
+08:20:09,68 root ERROR GreenhouseController: Error execute_process - 
+08:20:09,141 root ERROR Main: Error main - 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+10:14:58,259 root DEBUG initializing

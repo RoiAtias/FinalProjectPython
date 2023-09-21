@@ -10,8 +10,8 @@ class GreenHouseController:
     def __init__(self):
         self.fileUtils = FileUtils()
         self.plants = self.fileUtils.get_plants()
-        self.irrigation_system = IrrigationSystem()
         self.conf = AppConfig()
+        self.irrigation_system = IrrigationSystem(self.conf.greenHouseControllerConfig["WaterLevelIrrigationSystem"])
 
     def add_plant(self, plant: Plant):
         """
@@ -47,56 +47,45 @@ class GreenHouseController:
         :type days: int
         """
         try:
-            if days < 0:
-                print("Error The number of days should be a positive number")
-            water_level_irrigation_system = self.conf.greenHouseControllerConfig["WaterLevelIrrigationSystem"]
-            intensity = self.conf.light_exposure_by_weather()
-            if (intensity > 0 and water_level_irrigation_system > 0) and (intensity > 0 or water_level_irrigation_system
-                                                                          > 0):
-                self.irrigation_system.add_water(water_level_irrigation_system)
-                water_counter = self.irrigation_system.water_level
-                for day in range(days + 1):
-                    if sum(plant.water_requirement for plant in self.plants) < self.irrigation_system.water_level:
-                        self.water_plants()
-                        for plant in self.plants:
-                            water_counter -= plant.water_requirement
-                            self.execute_process(plant, day, self.conf.greenHouseControllerConfig["WaterPlant"],
-                                                 intensity, water_counter)
-                    else:
-                        print("There is not enough water in the irrigation system")
-                        break
+            if days > 0:
+                water_level_irrigation_system = self.conf.greenHouseControllerConfig["WaterLevelIrrigationSystem"]
+                intensity = self.conf.light_exposure_by_weather()
+                if intensity > 0 and water_level_irrigation_system > 0:
+                    water_counter = self.irrigation_system.water_level
+                    for day in range(days + 1):
+                        if sum(plant.water_requirement for plant in self.plants) < self.irrigation_system.water_level:
+                            self.water_plants()
+                            self.execute_process_plant(day, intensity, self.irrigation_system.water_level)
+                        else:
+                            print("There is not enough water in the irrigation system")
+                            break
+                else:
+                    print(f"GreenhouseController: Error run_simulation  Error The amount of light or water is not "
+                          f"greater than 0")
             else:
-                print(f"GreenhouseController: Error run_simulation  Error The amount of light or water is not greater "
-                      f"than 0")
+                print("Error The number of days should be a positive number")
         except BaseException as err:
             print(f"GreenhouseController: Error run_simulation - {err}")
             logging.error(f"GreenhouseController: Error run_simulation - {err}")
 
-    def execute_process(self, plant: Plant, day: int, water: float, intensity: float, water_counter: float):
+    def execute_process_plant(self, day: int, intensity: float, water_counter: float):
         """
-        This function The function receives a plant and performs on it the actions of introducing an amount of
-        water and receiving an amount of light and activates the function of growth that exists in the plant.
+        The function receives a list of plants and handles the growth of each plant separately.
 
-        :param plant: The plant object.
-        :type plant: Plant
         :param day: day number in the run is used for printing.
         :type day: int
-        :param water: amount of water for watering the plant
-        :type water: float
         :param intensity: amount of light
         :type intensity: float
         :param water_counter: amount of water in the irrigation system
         :type water_counter: float
         """
         try:
-            if water > 0:
-                plant.water(water)
-            else:
-                print(f"GreenhouseController: Error execute_process - The amount of water smaller than 0")
-            plant.provide_light(intensity)
-            plant_growth = plant.grow()
-            print(f"Plant {plant.name} : Day - {day}, Height - {round(plant.height, 5)}, "
-                  f"Plant Growth - {round(plant_growth, 5)}, Water In Irrigation system - {water_counter}")
+            for plant in self.plants:
+                water_counter -= plant.water_requirement
+                plant.provide_light(intensity)
+                plant_growth = plant.grow()
+                print(f"Plant {plant.name} : Day - {day}, Height - {round(plant.height, 5)}, "
+                      f"Plant Growth - {round(plant_growth, 5)}, Water In Irrigation system - {water_counter}")
         except BaseException as err:
             print(f"GreenhouseController: Error execute_process - {err}")
             logging.error(f"GreenhouseController: Error execute_process - {err}")
