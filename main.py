@@ -16,6 +16,7 @@ class Main:
         self.file_utils = FileUtils()
         self.config = AppConfig()
         self.logger = self.config.init_logger()
+        self.max_number_of_attempts = self.config.greenHouseConfig["MaxNumberOfAttempts"]
 
     def run(self):
         selected_choice = self.main_menu()
@@ -24,51 +25,66 @@ class Main:
 
     def main_menu(self):
         """
-            Creating a main menu of the application
+                          Creating a main menu of the application
         """
-        print("")
-        print("Hello! Welcome to GreenHouse!")
-        print("Please select the choice from the following options : ")
-        print("1. Run Simulation")
-        print("2. Testers")
-        print("3. Introductions")
-        print("4. Exit")
-        selected_choice = input("choice: ")
-        if self.check_valid_input_number(selected_choice):
-            return int(selected_choice)
-        else:
-            self.main_menu()
+        number_of_attempts = 0
+        while number_of_attempts < self.max_number_of_attempts:
+            try:
+                print("")
+                print("Hello! Welcome to GreenHouse!")
+                print("Please select the choice from the following options:")
+                print("1. Run Simulation")
+                print("2. Testers")
+                print("3. Introductions")
+                print("4. Exit")
+                return int(input("choice: "))
+            except ValueError:
+                print("Invalid input. Please enter a valid number.")
+                number_of_attempts += 1
+                print(f"You have {self.max_number_of_attempts - number_of_attempts} attempts left")
+        print("You tried to enter incorrect values several times. Try again with a new run of the system, thanks")
+        self.exit_program()
 
     def sub_menu_tester(self):
         """
             Creation of a test menu of the application
         """
-        print("")
-        print("Tester Menu")
-        print("Please select the choice from the following options : ")
-        print("1. Plant")
-        print("2. Irrigation System")
-        print("3. Green House Controller")
-        print("4. Back Main Menu")
-        selected_choice = input("choice: ")
-        if self.check_valid_input_number(selected_choice):
-            return int(selected_choice)
-        else:
-            self.sub_menu_tester()
+        number_of_attempts = 0
+        while number_of_attempts < self.max_number_of_attempts:
+            try:
+                print("")
+                print("Tester Menu")
+                print("Please select the choice from the following options:")
+                print("1. Plant")
+                print("2. Irrigation System")
+                print("3. Green House Controller")
+                print("4. Back Main Menu")
+                return int(input("choice: "))
+            except ValueError:
+                print("Invalid input. Please enter a valid number.")
+                number_of_attempts += 1
+                print(f"You have {self.max_number_of_attempts - number_of_attempts} attempts left")
+        print("You tried to enter incorrect values several times. Try again with a new run of the system, thanks")
+        self.exit_program()
 
     def return_main_menu(self):
         """
              Creating a back menu from the application activity
         """
-        print("")
-        print("Please select the choice from the following options : ")
-        print("1. Main Menu")
-        print("2. Exit")
-        selected_choice = input("choice: ")
-        if self.check_valid_input_number(selected_choice):
-            return int(selected_choice)
-        else:
-            self.return_main_menu()
+        number_of_attempts = 0
+        while number_of_attempts < self.max_number_of_attempts:
+            try:
+                print("")
+                print("Please select the choice from the following options:")
+                print("1. Main Menu")
+                print("2. Exit")
+                return int(input("choice: "))
+            except ValueError:
+                print("Invalid input. Please enter a valid number.")
+                number_of_attempts += 1
+                print(f"You have {self.max_number_of_attempts - number_of_attempts} attempts left")
+        print("You tried to enter incorrect values several times. Try again with a new run of the system, thanks")
+        self.exit_program()
 
     def run_main_menu(self, selected_choice: int):
         """
@@ -76,14 +92,17 @@ class Main:
         """
         if selected_choice == Menu.Run.value:
             green_house_controller = GreenHouseController()
+            print("")
             print("----- GreenHouseController - Run simulation -----")
             green_house_controller.run_simulation(self.config.greenHouseConfig["NumberDaysSystemRun"])
         elif selected_choice == Menu.Tester.value:
             self.execute_seb_menu_tester()
         elif selected_choice == Menu.Read_Me.value:
+            print("")
+            print("----- About -----")
             print(self.file_utils.get_read_me_file())
         elif selected_choice == Menu.Exit.value:
-            sys.exit()
+            self.exit_program()
         else:
             print(f"Choice {selected_choice} is incorrect, please choose again")
             self.run()
@@ -93,14 +112,17 @@ class Main:
              The function runs the actions from the tests menu
         """
         if selected_choice == Tester.Plant.value:
+            print("")
             print("----- Plant Tester -----")
             plant = PlantTester()
             plant.run()
         elif selected_choice == Tester.Irrigation_System.value:
+            print("")
             print("----- Irrigation System Tester -----")
             irrigation_system = IrrigationSystemTester()
             irrigation_system.run()
         elif selected_choice == Tester.Green_House_Controller.value:
+            print("")
             print("----- Green House Controller Tester -----")
             green_house_controller = GreenHouseControllerTester()
             green_house_controller.run()
@@ -117,20 +139,10 @@ class Main:
         if selected_choice == ReturnMenu.Main_Menu.value:
             self.run()
         elif selected_choice == ReturnMenu.Exit.value:
-            sys.exit()
+            self.exit_program()
         else:
             print(f"Choice {selected_choice} is incorrect, please choose again")
             self.execute_run_return_menu()
-
-    def check_valid_input_number(self, selected_choice) -> bool:
-        """
-        The function checks whether the received value is numeric and if not it does not display an error
-        """
-        is_valid = True
-        if not selected_choice.isdigit():
-            print(f"Choice {selected_choice} is incorrect, please choose again")
-            is_valid = False
-        return is_valid
 
     def execute_seb_menu_tester(self):
         """
@@ -145,6 +157,12 @@ class Main:
         """
         return_selected_choice = self.return_main_menu()
         self.run_return_menu(return_selected_choice)
+
+    def exit_program(self):
+        """
+              The function exits the program
+        """
+        sys.exit()
 
 
 if __name__ == '__main__':
