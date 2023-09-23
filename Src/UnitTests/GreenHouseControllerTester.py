@@ -14,7 +14,6 @@ class GreenHouseControllerTester(UnitTestBase):
         """
         try:
             if self.water_level_irrigation_system > 0 and self.number_days_system_run >= 0:
-                self.green_house_controller.irrigation_system.add_water(self.water_level_irrigation_system)
                 self.green_house_controller.run_simulation(self.number_days_system_run)
         except BaseException as err:
             print(f"GreenHouseControllerTester: Error run - {err}")

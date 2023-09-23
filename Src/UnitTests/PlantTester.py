@@ -1,5 +1,3 @@
-import datetime
-import random
 from Src.UnitTests.UnitTestBase import UnitTestBase
 import logging
 
@@ -15,7 +13,7 @@ class PlantTester(UnitTestBase):
         """
         try:
             if self.number_days_system_run >= 0 and self.conf.testerConfig["WaterPlant"] > 0:
-                for day in range(self.number_days_system_run + 1):
+                for day in range(self.number_days_system_run):
                     intensity = self.conf.light_exposure_by_weather()
                     for plant in self.plants:
                         plant.water(amount=self.conf.testerConfig["WaterPlant"])

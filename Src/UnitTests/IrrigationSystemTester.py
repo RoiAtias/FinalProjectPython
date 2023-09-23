@@ -16,7 +16,7 @@ class IrrigationSystemTester(UnitTestBase):
             if self.water_level_irrigation_system > 0 and self.number_days_system_run >= 0:
                 self.irrigation_system = IrrigationSystem(water_level=self.water_level_irrigation_system)
                 water_counter = self.irrigation_system.water_level
-                for day in range(self.number_days_system_run + 1):
+                for day in range(self.number_days_system_run):
                     intensity = self.conf.light_exposure_by_weather()
                     if sum(plant.water_requirement for plant in self.plants) < self.irrigation_system.water_level:
                         self.irrigation_system.irrigate_plants(self.plants)

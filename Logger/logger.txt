@@ -777,3 +777,40 @@
 08:20:09,68 root ERROR GreenhouseController: Error execute_process - 
 08:20:09,141 root ERROR Main: Error main - 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
 10:14:58,259 root DEBUG initializing
+07:14:42,68 root DEBUG initializing
+07:19:13,720 root DEBUG initializing
+07:26:40,324 root DEBUG initializing
+07:27:53,347 root DEBUG initializing
+07:33:28,59 root DEBUG initializing
+07:40:26,811 root DEBUG initializing
+07:46:34,176 root DEBUG initializing
+07:48:38,348 root DEBUG initializing
+08:01:09,911 root DEBUG initializing
+08:02:48,907 root DEBUG initializing
+08:04:32,959 root DEBUG initializing
+08:04:51,344 root ERROR GreenHouseControllerTester: Error run - 'NoneType' object has no attribute 'add_water'
+08:06:06,631 root DEBUG initializing
+08:06:11,921 root ERROR GreenHouseControllerTester: Error run - 'NoneType' object has no attribute 'add_water'
+08:06:16,907 root DEBUG initializing
+08:06:37,114 root ERROR GreenHouseControllerTester: Error run - 'NoneType' object has no attribute 'add_water'
+08:08:07,82 root DEBUG initializing
+08:08:17,255 root DEBUG initializing
+08:12:03,526 root DEBUG initializing
+08:12:28,212 root DEBUG initializing
+08:12:57,572 root ERROR GreenhouseController: Error run_simulation - 
+08:12:57,650 root ERROR Main: Error main - 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+08:12:58,928 root DEBUG initializing
+08:14:53,985 root DEBUG initializing
+08:16:50,405 root DEBUG initializing
+08:17:08,341 root DEBUG initializing
+08:18:57,849 root DEBUG initializing
+08:19:21,244 root ERROR Main: Error main - 'WaterLevelIrrigationSystem'
+08:19:51,535 root DEBUG initializing
+08:20:09,947 root ERROR Main: Error main - 'WaterLevelIrrigationSystem'
+08:32:38,353 root DEBUG initializing
+08:32:39,954 root DEBUG initializing
+08:34:47,34 root DEBUG initializing
+08:35:56,182 root DEBUG initializing
+08:42:08,158 root DEBUG initializing
+08:43:12,190 root DEBUG initializing
+08:43:56,839 root DEBUG initializing

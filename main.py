@@ -13,7 +13,6 @@ import logging
 
 class Main:
     def __init__(self):
-        self.green_house_controller = GreenHouseController()
         self.file_utils = FileUtils()
         self.config = AppConfig()
         self.logger = self.config.init_logger()
@@ -21,10 +20,12 @@ class Main:
     def run(self):
         selected_choice = self.main_menu()
         self.run_main_menu(selected_choice)
-        return_selected_choice = self.return_main_menu()
-        self.run_return_menu(return_selected_choice)
+        self.execute_run_return_menu()
 
     def main_menu(self):
+        """
+            Creating a main menu of the application
+        """
         print("")
         print("Hello! Welcome to GreenHouse!")
         print("Please select the choice from the following options : ")
@@ -39,6 +40,9 @@ class Main:
             self.main_menu()
 
     def sub_menu_tester(self):
+        """
+            Creation of a test menu of the application
+        """
         print("")
         print("Tester Menu")
         print("Please select the choice from the following options : ")
@@ -53,6 +57,9 @@ class Main:
             self.sub_menu_tester()
 
     def return_main_menu(self):
+        """
+             Creating a back menu from the application activity
+        """
         print("")
         print("Please select the choice from the following options : ")
         print("1. Main Menu")
@@ -64,12 +71,15 @@ class Main:
             self.return_main_menu()
 
     def run_main_menu(self, selected_choice: int):
+        """
+            The function runs the actions from the main menu
+        """
         if selected_choice == Menu.Run.value:
+            green_house_controller = GreenHouseController()
             print("----- GreenHouseController - Run simulation -----")
-            self.green_house_controller.run_simulation(self.config.greenHouseConfig["NumberDaysSystemRun"])
+            green_house_controller.run_simulation(self.config.greenHouseConfig["NumberDaysSystemRun"])
         elif selected_choice == Menu.Tester.value:
-            selected_seb_menu_tester = self.sub_menu_tester()
-            self.run_sub_menu(selected_choice=selected_seb_menu_tester)
+            self.execute_seb_menu_tester()
         elif selected_choice == Menu.Read_Me.value:
             print(self.file_utils.get_read_me_file())
         elif selected_choice == Menu.Exit.value:
@@ -79,6 +89,9 @@ class Main:
             self.run()
 
     def run_sub_menu(self, selected_choice: int):
+        """
+             The function runs the actions from the tests menu
+        """
         if selected_choice == Tester.Plant.value:
             print("----- Plant Tester -----")
             plant = PlantTester()
@@ -95,23 +108,43 @@ class Main:
             self.run()
         else:
             print(f"Choice {selected_choice} is incorrect, please choose again")
-            self.run()
+            self.execute_seb_menu_tester()
 
     def run_return_menu(self, selected_choice: int):
+        """
+        The function displays a back menu from the list of actions
+        """
         if selected_choice == ReturnMenu.Main_Menu.value:
             self.run()
         elif selected_choice == ReturnMenu.Exit.value:
             sys.exit()
         else:
             print(f"Choice {selected_choice} is incorrect, please choose again")
-            self.run()
+            self.execute_run_return_menu()
 
-    def check_valid_input_number(self, selected_choice):
+    def check_valid_input_number(self, selected_choice) -> bool:
+        """
+        The function checks whether the received value is numeric and if not it does not display an error
+        """
         is_valid = True
         if not selected_choice.isdigit():
             print(f"Choice {selected_choice} is incorrect, please choose again")
             is_valid = False
         return is_valid
+
+    def execute_seb_menu_tester(self):
+        """
+        The function activates the menu of the system's testers
+        """
+        selected_seb_menu_tester = self.sub_menu_tester()
+        self.run_sub_menu(selected_choice=selected_seb_menu_tester)
+
+    def execute_run_return_menu(self):
+        """
+              The function activates the menu of return to the initial menu
+        """
+        return_selected_choice = self.return_main_menu()
+        self.run_return_menu(return_selected_choice)
 
 
 if __name__ == '__main__':
