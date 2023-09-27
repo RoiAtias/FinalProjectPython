@@ -93,7 +93,7 @@ class Main:
         if selected_choice == Menu.Run.value:
             green_house_controller = GreenHouseController()
             print("")
-            print("----- GreenHouseController - Run simulation -----")
+            print("----- Green House Controller - Run Simulation -----")
             green_house_controller.run_simulation(self.config.greenHouseConfig["NumberDaysSystemRun"])
         elif selected_choice == Menu.Tester.value:
             self.execute_seb_menu_tester()
