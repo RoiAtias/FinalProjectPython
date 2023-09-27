@@ -858,3 +858,129 @@
 09:43:54,978 root DEBUG initializing
 09:45:02,106 root DEBUG initializing
 09:45:39,454 root DEBUG initializing
+09:46:42,591 root DEBUG initializing
+18:16:50,568 root DEBUG initializing
+18:17:20,480 root DEBUG initializing
+18:32:28,115 root DEBUG initializing
+18:34:51,375 root DEBUG initializing
+18:35:24,867 root DEBUG initializing
+18:39:27,12 root DEBUG initializing
+18:40:20,309 root DEBUG initializing
+18:40:37,959 root DEBUG initializing
+18:42:42,609 root DEBUG initializing
+18:43:31,996 root DEBUG initializing
+18:45:24,547 root DEBUG initializing
+18:45:29,779 root DEBUG initializing
+18:45:49,296 root DEBUG initializing
+18:46:27,494 root DEBUG initializing
+18:46:58,972 root DEBUG initializing
+18:47:35,168 root DEBUG initializing
+18:51:03,221 root ERROR IrrigationSystem: Error irrigate_plants - 
+18:51:20,671 root DEBUG initializing
+18:52:47,530 root DEBUG initializing
+18:57:29,398 root DEBUG initializing
+18:59:52,865 root DEBUG initializing
+19:03:43,52 root DEBUG initializing
+19:13:49,254 root DEBUG initializing
+19:15:43,739 root DEBUG initializing
+19:20:59,519 root DEBUG initializing
+19:21:19,980 root DEBUG initializing
+19:22:05,851 root DEBUG initializing
+19:22:57,400 root DEBUG initializing
+19:23:58,826 root DEBUG initializing
+19:24:27,902 root DEBUG initializing
+19:26:09,32 root DEBUG initializing
+19:26:30,631 root DEBUG initializing
+19:28:07,440 root DEBUG initializing
+19:28:18,839 root DEBUG initializing
+19:28:20,173 root ERROR Plant: Error grow - No active exception to reraise
+19:28:20,173 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+19:28:20,173 root ERROR Plant: Error grow - No active exception to reraise
+19:28:20,173 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+19:28:20,173 root ERROR Plant: Error grow - No active exception to reraise
+19:28:20,173 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+19:28:20,174 root ERROR Plant: Error grow - No active exception to reraise
+19:28:20,174 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+19:30:55,148 root DEBUG initializing
+19:31:50,820 root DEBUG initializing
+19:34:34,186 root DEBUG initializing
+19:35:26,534 root DEBUG initializing
+19:36:14,94 root DEBUG initializing
+20:30:46,615 root DEBUG initializing
+20:44:28,635 root DEBUG initializing
+20:44:31,738 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+20:44:31,742 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+20:44:31,742 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+20:44:31,743 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+20:44:31,743 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+20:44:31,743 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+20:44:31,743 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+20:44:31,744 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+20:44:31,744 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+20:44:31,744 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+20:46:39,345 root DEBUG initializing
+20:53:39,341 root DEBUG initializing
+20:54:02,250 root DEBUG initializing
+20:56:34,638 root DEBUG initializing
+20:56:36,190 root ERROR Plant: Error grow - no
+20:56:36,190 root ERROR Plant: Error grow - no
+20:56:36,190 root ERROR Plant: Error grow - no
+20:56:36,191 root ERROR Plant: Error grow - no
+20:56:36,191 root ERROR Plant: Error grow - no
+20:56:36,191 root ERROR Plant: Error grow - no
+21:00:07,289 root DEBUG initializing
+21:01:27,389 root DEBUG initializing
+21:01:53,469 root DEBUG initializing
+21:02:02,986 root DEBUG initializing
+21:02:40,230 root DEBUG initializing
+21:03:02,317 root DEBUG initializing
+21:06:05,343 root DEBUG initializing
+21:10:55,918 root DEBUG initializing
+21:11:08,748 root DEBUG initializing
+21:13:11,62 root DEBUG initializing
+21:13:24,101 root DEBUG initializing
+21:17:09,966 root DEBUG initializing
+21:17:12,116 root ERROR Plant: Error grow - exceptions must derive from BaseException
+21:17:12,116 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+21:18:06,23 root DEBUG initializing
+21:18:17,532 root DEBUG initializing
+21:18:18,934 root ERROR Plant: Error grow - exceptions must derive from BaseException
+21:18:18,935 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+21:18:18,935 root ERROR Plant: Error grow - exceptions must derive from BaseException
+21:18:18,935 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+21:18:18,936 root ERROR Plant: Error grow - exceptions must derive from BaseException
+21:18:18,936 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+21:18:18,936 root ERROR Plant: Error grow - exceptions must derive from BaseException
+21:18:18,936 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+21:18:18,937 root ERROR Plant: Error grow - exceptions must derive from BaseException
+21:18:18,937 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+21:18:18,937 root ERROR Plant: Error grow - exceptions must derive from BaseException
+21:18:18,937 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+21:18:18,937 root ERROR Plant: Error grow - exceptions must derive from BaseException
+21:18:18,937 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+21:18:18,938 root ERROR Plant: Error grow - exceptions must derive from BaseException
+21:18:18,938 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+21:18:18,938 root ERROR Plant: Error grow - exceptions must derive from BaseException
+21:18:18,938 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+21:18:18,938 root ERROR Plant: Error grow - exceptions must derive from BaseException
+21:18:18,939 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+21:18:18,939 root ERROR Plant: Error grow - exceptions must derive from BaseException
+21:18:18,939 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+21:18:18,939 root ERROR Plant: Error grow - exceptions must derive from BaseException
+21:18:18,939 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+21:18:18,940 root ERROR Plant: Error grow - exceptions must derive from BaseException
+21:18:18,940 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+21:18:18,940 root ERROR Plant: Error grow - exceptions must derive from BaseException
+21:18:18,940 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+21:18:18,940 root ERROR Plant: Error grow - exceptions must derive from BaseException
+21:18:18,940 root ERROR GreenhouseController: Error execute_process - type NoneType doesn't define __round__ method
+21:57:51,596 root DEBUG initializing
+22:18:03,943 root DEBUG initializing
+22:18:15,707 root DEBUG initializing
+22:20:46,957 root DEBUG initializing
+22:21:33,32 root DEBUG initializing
+22:23:29,553 root DEBUG initializing
+08:11:13,493 root DEBUG initializing
+08:16:14,892 root DEBUG initializing
+08:25:47,216 root DEBUG initializing
+08:27:15,507 root DEBUG initializing

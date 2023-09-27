@@ -65,11 +65,12 @@ class Plant:
             if self.light_exposure < self.light_requirement:  # Checking whether there is enough light
                 planet_growth = 0
 
-            self.height += planet_growth
-
-            # Testing in the state of wilting of the plant, the height cannot be at a negative height
-            if self.height < 0:
-                print(f"The plant is at a height that cannot be lowered below it")
+            if self.height + planet_growth < 0:
+                # Check state of wilting of the plant, the height cannot be at a negative height
+                print(f"The plant {self.name} is dead")
+                self.height = 0
+            else:
+                self.height += planet_growth
 
             self.age += 1
             self.water_level = 0

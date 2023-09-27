@@ -51,12 +51,8 @@ class GreenHouseController:
                 water_level_irrigation_system = self.conf.greenHouseControllerConfig["WaterLevelIrrigationSystem"]
                 if water_level_irrigation_system > 0:
                     for day in range(days):
-                        if sum(plant.water_requirement for plant in self.plants) < self.irrigation_system.water_level:
-                            self.water_plants()
-                            self.execute_process_plant(day)
-                        else:
-                            print("There is not enough water in the irrigation system")
-                            break
+                        self.water_plants()
+                        self.execute_process_plant(day)
                 else:
                     print(f"GreenhouseController: Error run_simulation  Error The amount of light or water is not "
                           f"greater than 0")
@@ -79,12 +75,15 @@ class GreenHouseController:
             intensity = self.conf.light_exposure_by_weather()
             if intensity >= 0:
                 for plant in self.plants:
-                    water_count -= plant.water_requirement
+                    if water_count - plant.water_requirement > 0:
+                        water_count -= plant.water_requirement
                     plant.provide_light(intensity)
                     plant_growth = plant.grow()
-                    print(f"{plant.name} : Day - {day}, Height - {round(plant.height, 5)}, "
-                          f"Plant Growth - {round(plant_growth, 5)}, Water In Irrigation system - "
-                          f"{round(water_count, 5)}")
+                    if plant.height > 0:
+                        print(f"{plant.name} : Day - {day}, Height - {round(plant.height, 5)}, "
+                              f"Plant Growth - {round(plant_growth, 5)}, Water In Irrigation system - "
+                              f"{round(water_count, 5)}")
+
         except BaseException as err:
             print(f"GreenhouseController: Error execute_process - {err}")
             logging.error(f"GreenhouseController: Error execute_process - {err}")

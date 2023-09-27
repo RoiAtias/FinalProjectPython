@@ -38,8 +38,11 @@ class IrrigationSystem:
             if plants:
                 amount_water_irrigation = self.water_level / len(plants)
                 for plant in plants:
-                    plant.water(amount_water_irrigation)
-                    self.water_level -= plant.water_requirement
+                    if self.water_level - plant.water_requirement > 0:
+                        plant.water(amount_water_irrigation)
+                        self.water_level -= plant.water_requirement
+                    else:
+                        self.water_level = 0
 
         except BaseException as err:
             print(f"IrrigationSystem: Error irrigate_plants - {err}")

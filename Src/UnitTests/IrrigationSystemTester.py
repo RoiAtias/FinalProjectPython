@@ -18,21 +18,16 @@ class IrrigationSystemTester(UnitTestBase):
                 water_counter = self.irrigation_system.water_level
                 for day in range(self.number_days_system_run):
                     intensity = self.conf.light_exposure_by_weather()
-                    if sum(plant.water_requirement for plant in self.plants) < self.irrigation_system.water_level:
-                        self.irrigation_system.irrigate_plants(self.plants)
-                        for plant in self.plants:
-                            plant.provide_light(intensity)
-                            planet_growth = plant.grow()
+
+                    self.irrigation_system.irrigate_plants(self.plants)
+                    for plant in self.plants:
+                        plant.provide_light(intensity)
+                        planet_growth = plant.grow()
+                        if water_counter - plant.water_requirement > 0:
                             water_counter = water_counter - plant.water_requirement
-                            print(
-                                f"{plant.name} : Day - {day}, Water in Irrigation System - {round(water_counter, 5)}, "
-                                f"Planet Growth - {round(planet_growth, 5)}, "
-                                f"Height - {round(plant.height, 5)}")
-                    else:
-                        print("There is not enough water in the irrigation system")
-                        logging.error(f"IrrigationSystemTester: Error - There is not enough water in "
-                                      f"the irrigation system")
-                        break
+                        print(f"{plant.name} : Day - {day}, Water in Irrigation System - {round(water_counter, 5)}, "
+                              f"Planet Growth - {round(planet_growth, 5)}, "
+                              f"Height - {round(plant.height, 5)}")
 
         except BaseException as err:
             print(f"IrrigationSystemTester: Error run_simulation - {err}")
